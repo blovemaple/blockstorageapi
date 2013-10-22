@@ -1,0 +1,32 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>blove.blockstorage</groupId>
+	<artifactId>blockstorageapi</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>blockstorageapi</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>blove-git-releases</id>
+			<name>Blove's Release Repository on GitHub</name>
+			<url>file://C:\Users\chentong02\git\maven-repository\releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>blove-git-snapshots</id>
+			<name>Blove's Release Repository on GitHub</name>
+			<url>file://C:\Users\chentong02\git\maven-repository\snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
