@@ -25,7 +25,7 @@
 		</repository>
 		<snapshotRepository>
 			<id>blove-git-snapshots</id>
-			<name>Blove's Release Repository on GitHub</name>
+			<name>Blove's Snapshot Repository on GitHub</name>
 			<url>file://C:\Users\chentong02\git\maven-repository\snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
