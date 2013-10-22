@@ -100,13 +100,6 @@ public interface BlockStorage {
 	public String name();
 
 	/**
-	 * 返回此存储空间的类型描述。
-	 * 
-	 * @return 类型
-	 */
-	public String type();
-
-	/**
 	 * 返回此存储空间是否是只读的。
 	 * 
 	 * @return 如果是只读的，返回true；如果是可读可写，返回false。
