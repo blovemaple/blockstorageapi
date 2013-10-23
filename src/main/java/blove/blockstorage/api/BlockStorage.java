@@ -45,6 +45,8 @@ public interface BlockStorage {
 	 *            数据
 	 * @param replaceAllowed
 	 *            是否允许覆盖已有块
+	 * @throws ReadOnlyStorageException
+	 *             如果存储空间是只读的
 	 * @throws BlockAlreadyExistException
 	 *             如果块已存在，且replaceAllowed参数为false。
 	 * @throws IOException

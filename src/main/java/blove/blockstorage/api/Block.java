@@ -53,6 +53,8 @@ public interface Block {
 	/**
 	 * 删除此块。
 	 * 
+	 * @throws ReadOnlyStorageException
+	 *             如果存储空间是只读的
 	 * @throws IOException
 	 *             出现I/O异常
 	 */
