@@ -17,16 +17,59 @@
 	<dependencies>
 	</dependencies>
 
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
 	<distributionManagement>
 		<repository>
 			<id>blove-git-releases</id>
 			<name>Blove's Release Repository on GitHub</name>
-			<url>file://C:\Users\chentong02\git\maven-repository\releases</url>
+			<!-- local dir -->
+			<url>file:///home/blove/Programing/git/maven-repository/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>blove-git-snapshots</id>
 			<name>Blove's Snapshot Repository on GitHub</name>
-			<url>file://C:\Users\chentong02\git\maven-repository\snapshots</url>
+			<!-- local dir -->
+			<url>file:///home/blove/Programing/git/maven-repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
