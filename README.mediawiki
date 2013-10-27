@@ -1,0 +1,37 @@
+==Introduction==
+A java API, which defines interfaces of storage space based on unmodifiable blocks.
+
+==Use as maven dependency==
+*Config dependency
+ <dependencies>
+  <dependency>
+   <groupId>blove.blockstorage</groupid>
+   <artifactId>blockstorageapi</artifactid>
+   <version>(LATEST VERSION)</version>
+  </dependency>
+ </dependencies>
+*Config repository
+ <repositories>
+  <repository>
+   <id>blove-git-releases</id>
+   <name>Blove's Release Repository on GitHub</name>
+   <url>https://github.com/blovemaple/maven-repository/raw/master/releases</url>
+   <releases>
+    <enabled>true</enabled>
+   </releases>
+   <snapshots>
+    <enabled>false</enabled>
+   </snapshots>
+  </repository>
+  <repository>
+   <id>blove-git-snapshots</id>
+   <name>Blove's Snapshot Repository on GitHub</name>
+   <url>https://github.com/blovemaple/maven-repository/raw/master/snapshots</url>
+   <releases>
+    <enabled>false</enabled>
+   </releases>
+   <snapshots>
+    <enabled>true</enabled>
+   </snapshots>
+  </repository>
+ </repositories>
